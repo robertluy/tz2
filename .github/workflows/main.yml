@@ -18,10 +18,10 @@ jobs:
         - name: testing
           run: |
             python3 -m unittest tst
-        - name: notification
-          if: cancelled() == false
-          uses: xinthink/action-telegram@v1.1
+        - uses: robotomize/notify-telegram@v0.1.0
+          if: always()
           with:
-            botToken: 5735366347:AAHxo3Nk7bfQyI9BQnN6wctaUvKt6cAF--U
-            chatId: -1001861863113
-            jobStatus: ${{ job.status }}
+            chat: -1001861863113 # user id or channel name secret
+            token: 5735366347:AAHxo3Nk7bfQyI9BQnN6wctaUvKt6cAF--U # token secret
+            status: ${{ job.status }} # do not modify this line
+            message: ${{ secrets.message }} # custom message
