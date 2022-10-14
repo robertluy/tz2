@@ -25,7 +25,5 @@ jobs:
             status: 5
             bot-token: 5735366347:AAHxo3Nk7bfQyI9BQnN6wctaUvKt6cAF--U
             chat-id: -1001861863113
-            container-name: my-org/container-name
-            container-link: https://my-docker-registry.com/my-org/container-name
             skip-is-fail: true
             default-branch: $default-branch
