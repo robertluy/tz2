@@ -17,4 +17,4 @@ jobs:
             python-version: 3.9
         - name: testing
           run: |
-            python3 -m unittest test
+            python3 -m unittest tst
