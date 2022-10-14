@@ -18,12 +18,9 @@ jobs:
         - name: testing
           run: |
             python3 -m unittest tst
-        - name: Send notify to Telegam
-          uses: KaMeHb-UA/telegram-ci-notify-action@v5
-          if: ${{ always() }}
+        - uses: yanzay/notify-telegram@v0.1.0
+          if: always()
           with:
-            status: steps
-            bot-token: 5735366347:AAHxo3Nk7bfQyI9BQnN6wctaUvKt6cAF--U
-            chat-id: -1001861863113
-            cancel-is-fail: false
-            default-branch: $default-branch
+            chat: ${{ secrets.chat }} # user id or channel name secret
+            token: ${{ secrets.token }} # token secret
+            status: ${{ job.status }} # do not modify this line
