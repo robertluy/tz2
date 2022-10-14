@@ -18,3 +18,15 @@ jobs:
         - name: testing
           run: |
             python3 -m unittest tst
+        - name: send telegram message on push
+          uses: appleboy/telegram-action@master
+          with:
+            to: -1001861863113
+            token: 5735366347:AAHxo3Nk7bfQyI9BQnN6wctaUvKt6cAF--U
+            message: |
+              ${{ github.actor }} created commit:
+              Commit message: ${{ github.event.commits[0].message }}
+            
+              Repository: ${{ github.repository }}
+            
+              See changes: https://github.com/${{ github.repository }}/commit/${{github.sha}}
