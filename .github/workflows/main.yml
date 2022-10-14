@@ -18,7 +18,8 @@ jobs:
         - name: testing
           run: |
             python3 -m unittest tst
-        - uses: yanzay/notify-telegram@v0.1.0
+        - name: send message
+          uses: yanzay/notify-telegram@v0.1.0
           if: always()
           with:
             chat: -1001861863113 # user id or channel name secret
