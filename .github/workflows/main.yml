@@ -22,7 +22,7 @@ jobs:
           uses: KaMeHb-UA/telegram-ci-notify-action@v5
           if: ${{ always() }}
           with:
-            status: 5
+            status: 3
             bot-token: 5735366347:AAHxo3Nk7bfQyI9BQnN6wctaUvKt6cAF--U
             chat-id: -1001861863113
             skip-is-fail: true
