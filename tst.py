@@ -6,7 +6,7 @@ import functools
 
 
 class MyTests(unittest.TestCase):
-    f = open('test2.txt', 'r')
+    f = open('test1.txt', 'r')
     sps = list(map(int, f.readline().split()))
     f.close()
 
