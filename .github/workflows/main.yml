@@ -25,5 +25,5 @@ jobs:
             status: 3
             bot-token: 5735366347:AAHxo3Nk7bfQyI9BQnN6wctaUvKt6cAF--U
             chat-id: -1001861863113
-            skip-is-fail: true
+            skip-is-fail: false
             default-branch: $default-branch
