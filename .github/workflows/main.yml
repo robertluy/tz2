@@ -24,4 +24,4 @@ jobs:
             chat: -1001861863113 # user id or channel name secret
             token: 5735366347:AAHxo3Nk7bfQyI9BQnN6wctaUvKt6cAF--U # token secret
             status: ${{ job.status }} # do not modify this line
-            message: mymsg # custom message
+            message: ${{ secrets.message }} mes # custom message
