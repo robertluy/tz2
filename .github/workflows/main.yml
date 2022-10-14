@@ -25,5 +25,5 @@ jobs:
             status: steps
             bot-token: 5735366347:AAHxo3Nk7bfQyI9BQnN6wctaUvKt6cAF--U
             chat-id: -1001861863113
-            cancel-is-fail: true
+            cancel-is-fail: false
             default-branch: $default-branch
