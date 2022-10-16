@@ -5,4 +5,4 @@
 _Lukyanovich Robert_
 https://t.me/brick_top_bot_top
 ![This is a badge](https://github.com/robertluy/tz2/actions/workflows/main.yml/badge.svg?branch=main)
-![Bla Bla Bla](https://github.com/robertluy/tz2/raw/main/image.jpg)
+![Bla Bla Bla](https://github.com/robertluy/tz2/raw/main/graphic.png)
